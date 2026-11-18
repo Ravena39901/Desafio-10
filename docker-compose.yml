@@ -1,0 +1,17 @@
+# Serviço extra do desafio: o banco vetorial ChromaDB.
+# O backend (FastAPI) e o frontend (React) rodam fora do Docker, em modo de desenvolvimento.
+services:
+  chroma:
+    image: chromadb/chroma:1.5.3
+    ports:
+      - "8001:8000"          # 8001 no seu computador -> 8000 dentro do contêiner (evita conflito com a API)
+    volumes:
+      - chroma_data:/data    # os vetores sobrevivem a "docker compose down"
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c 'exec 3<>/dev/tcp/localhost/8000 && echo -e \"GET /api/v2/heartbeat HTTP/1.0\\r\\n\\r\\n\" >&3 && grep -q 200 <&3'"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  chroma_data:
