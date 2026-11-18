@@ -1,0 +1,255 @@
+{
+  "resumo": {
+    "perguntas": 15,
+    "top_k": 5,
+    "hit_at_1": 0.6666666666666666,
+    "hit_at_k": 0.9333333333333333,
+    "mrr": 0.7611111111111111,
+    "taxa_de_acerto": 0.6666666666666666,
+    "fora_do_escopo_recusadas": "1/2",
+    "menor_score_com_resposta": 0.0851,
+    "maior_score_fora_do_escopo": 0.1812,
+    "limiar_atual": 0.15
+  },
+  "resultados": [
+    {
+      "id": 1,
+      "pergunta": "Quantas faltas posso ter?",
+      "resposta_esperada": "Até 25% da carga horária da disciplina (frequência mínima de 75%). Exemplo: 15 horas em uma disciplina de 60 horas.",
+      "posicao": 1,
+      "melhor_score": 0.2917,
+      "resposta": "Art. 18. O limite de faltas corresponde a 25% da carga horária de cada disciplina.\nAssim, em uma disciplina de 60 horas o estudante pode faltar até 15 horas, e em uma disciplina de 80 horas, até 20 horas. (Art. 18, p. 3)",
+      "fontes": [
+        "Art. 18 (p. 3) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": true,
+      "palavras_ok": true,
+      "acertou": true,
+      "motivo": "ok"
+    },
+    {
+      "id": 2,
+      "pergunta": "Como faço o trancamento da matrícula?",
+      "resposta_esperada": "Pelo Portal do Aluno, em Requerimentos > Trancamento de matrícula, até o trigésimo dia letivo, com justificativa.",
+      "posicao": null,
+      "melhor_score": 0.5168,
+      "resposta": "Art. 10. O trancamento de matrícula é a suspensão temporária dos estudos, com manutenção do vínculo do estudante com a instituição. (Art. 10, p. 2)",
+      "fontes": [
+        "Art. 10 (p. 2) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": false,
+      "palavras_ok": false,
+      "acertou": false,
+      "motivo": "ok"
+    },
+    {
+      "id": 3,
+      "pergunta": "Por quanto tempo posso deixar a matrícula trancada?",
+      "resposta_esperada": "No máximo quatro semestres, consecutivos ou não.",
+      "posicao": 3,
+      "melhor_score": 0.4733,
+      "resposta": "Art. 10. O trancamento de matrícula é a suspensão temporária dos estudos, com manutenção do vínculo do estudante com a instituição. (Art. 10, p. 2)",
+      "fontes": [
+        "Art. 10 (p. 2) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": false,
+      "palavras_ok": false,
+      "acertou": false,
+      "motivo": "ok"
+    },
+    {
+      "id": 4,
+      "pergunta": "Posso trancar a matrícula no primeiro semestre?",
+      "resposta_esperada": "Não, exceto por motivo de saúde comprovado por laudo médico ou convocação para o serviço militar obrigatório.",
+      "posicao": 1,
+      "melhor_score": 0.4879,
+      "resposta": "Art. 14. Não é permitido trancar a matrícula no primeiro semestre do curso, exceto por motivo de saúde comprovado por laudo médico ou por convocação para o serviço militar obrigatório. (Art. 14, p. 2)",
+      "fontes": [
+        "Art. 14 (p. 2) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": true,
+      "palavras_ok": true,
+      "acertou": true,
+      "motivo": "ok"
+    },
+    {
+      "id": 5,
+      "pergunta": "Qual a média para ser aprovado sem fazer exame final?",
+      "resposta_esperada": "Média parcial igual ou superior a 7,0, com frequência mínima de 75%.",
+      "posicao": 4,
+      "melhor_score": 0.5693,
+      "resposta": "Art. 26. A média final do estudante que fez o exame final é a média aritmética entre a média parcial e a nota do exame final. Será aprovado o estudante cuja média final for igual ou superior a 5,0 (cinco); caso contrário, estará reprovado na disciplina. (Art. 26, p. 4)",
+      "fontes": [
+        "Art. 26 (p. 4) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": false,
+      "palavras_ok": false,
+      "acertou": false,
+      "motivo": "ok"
+    },
+    {
+      "id": 6,
+      "pergunta": "Quem tem direito de fazer o exame final?",
+      "resposta_esperada": "Quem tem média parcial entre 4,0 e 6,9 e frequência mínima de 75%.",
+      "posicao": 1,
+      "melhor_score": 0.4817,
+      "resposta": "Art. 25. O estudante com média parcial entre 4,0 (quatro) e 6,9 (seis vírgula nove) e frequência mínima de 75% terá direito a realizar o exame final. O estudante com média parcial inferior a 4,0 está reprovado, sem direito ao exame final. (Art. 25, p. 4)",
+      "fontes": [
+        "Art. 25 (p. 4) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": true,
+      "palavras_ok": true,
+      "acertou": true,
+      "motivo": "ok"
+    },
+    {
+      "id": 7,
+      "pergunta": "Qual média final preciso tirar depois do exame final para passar?",
+      "resposta_esperada": "Média final igual ou superior a 5,0 (média aritmética entre a média parcial e a nota do exame).",
+      "posicao": 1,
+      "melhor_score": 0.4415,
+      "resposta": "Art. 26. A média final do estudante que fez o exame final é a média aritmética entre a média parcial e a nota do exame final. Será aprovado o estudante cuja média final for igual ou superior a 5,0 (cinco); caso contrário, estará reprovado na disciplina. (Art. 26, p. 4)",
+      "fontes": [
+        "Art. 26 (p. 4) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": true,
+      "palavras_ok": true,
+      "acertou": true,
+      "motivo": "ok"
+    },
+    {
+      "id": 8,
+      "pergunta": "Perdi uma prova porque estava doente. O que eu faço?",
+      "resposta_esperada": "Pedir segunda chamada pelo Portal do Aluno em até três dias úteis, anexando o atestado médico.",
+      "posicao": 3,
+      "melhor_score": 0.0851,
+      "resposta": "Não encontrei essa informação no regulamento acadêmico nem no manual do aluno. Procure a Secretaria Acadêmica para confirmar.",
+      "fontes": [],
+      "fonte_ok": false,
+      "palavras_ok": false,
+      "acertou": false,
+      "motivo": "sem_trechos_relevantes"
+    },
+    {
+      "id": 9,
+      "pergunta": "Qual é o prazo para pedir revisão de uma nota?",
+      "resposta_esperada": "Até cinco dias úteis após a divulgação da nota, por requerimento ao professor.",
+      "posicao": 1,
+      "melhor_score": 0.356,
+      "resposta": "Art. 29. O estudante pode solicitar revisão de prova ou de nota em até cinco dias úteis após a divulgação da nota, por requerimento fundamentado dirigido ao professor da disciplina. Persistindo a discordância, o estudante pode recorrer ao Colegiado do Curso em até cinco dias úteis da resposta do professor. (Art. 29, p. 4)",
+      "fontes": [
+        "Art. 29 (p. 4) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": true,
+      "palavras_ok": true,
+      "acertou": true,
+      "motivo": "ok"
+    },
+    {
+      "id": 10,
+      "pergunta": "O atestado médico abona as faltas?",
+      "resposta_esperada": "Não. O atestado serve apenas para pedir a segunda chamada de avaliações perdidas.",
+      "posicao": 1,
+      "melhor_score": 0.3584,
+      "resposta": "Art. 20. O atestado médico não abona faltas. Ele serve apenas como documento comprobatório para solicitar a segunda chamada de avaliações perdidas no período de afastamento, nos termos do Art. 28. (Art. 20, p. 3)",
+      "fontes": [
+        "Art. 20 (p. 3) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": true,
+      "palavras_ok": true,
+      "acertou": true,
+      "motivo": "ok"
+    },
+    {
+      "id": 11,
+      "pergunta": "Posso aproveitar uma disciplina que fiz em outra faculdade?",
+      "resposta_esperada": "Sim, se houver compatibilidade mínima de 75% de conteúdo e carga horária, com pedido nos primeiros trinta dias do primeiro semestre.",
+      "posicao": 1,
+      "melhor_score": 0.3239,
+      "resposta": "Art. 31. O estudante pode solicitar o aproveitamento (dispensa) de disciplinas cursadas com aprovação em outra instituição de ensino superior reconhecida, desde que haja compatibilidade mínima de 75% entre o conteúdo programático e a carga horária da disciplina cursada e os da disciplina da instituição.\n§ 1º O pedido deve ser protocolado na Secretaria Acadêmica nos primeiros trinta dias do primeiro semestre do estudante, anexando o histórico escolar e as ementas autenticadas das disciplinas cursadas.\n§ 2º Podem ser aproveitados no máximo 50% dos créditos do curso.\n§ 3º Disciplinas cursadas há… (Art. 31, p. 5)",
+      "fontes": [
+        "Art. 31 (p. 5) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": true,
+      "palavras_ok": true,
+      "acertou": true,
+      "motivo": "ok"
+    },
+    {
+      "id": 12,
+      "pergunta": "Qual é o prazo máximo para concluir o curso?",
+      "resposta_esperada": "Uma vez e meia (1,5) a duração mínima do curso; em um curso de oito semestres, doze semestres.",
+      "posicao": 1,
+      "melhor_score": 0.5267,
+      "resposta": "Art. 40. O prazo máximo para a conclusão do curso é de uma vez e meia (1,5) a duração mínima prevista no projeto pedagógico. Por exemplo, em um curso com duração mínima de oito semestres, o prazo máximo é de doze semestres. Os semestres trancados nos termos do Art. 12 não são contados nesse prazo. (Art. 40, p. 6)",
+      "fontes": [
+        "Art. 40 (p. 6) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": true,
+      "palavras_ok": true,
+      "acertou": true,
+      "motivo": "ok"
+    },
+    {
+      "id": 13,
+      "pergunta": "Em quanto tempo sai o histórico escolar?",
+      "resposta_esperada": "Em até cinco dias úteis após a solicitação pelo Portal do Aluno; a primeira via é gratuita.",
+      "posicao": 1,
+      "melhor_score": 0.1834,
+      "resposta": "Art. 42. O histórico escolar e a declaração de matrícula são emitidos pela Secretaria Acadêmica em até cinco dias úteis após a solicitação feita pelo Portal do Aluno. A primeira via é gratuita. (Art. 42, p. 6)",
+      "fontes": [
+        "Art. 42 (p. 6) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": true,
+      "palavras_ok": true,
+      "acertou": true,
+      "motivo": "ok"
+    },
+    {
+      "id": 14,
+      "pergunta": "Quantos livros posso pegar emprestados na biblioteca e por quantos dias?",
+      "resposta_esperada": "Até 5 livros ao mesmo tempo, por 7 dias corridos, com até 3 renovações.",
+      "posicao": 1,
+      "melhor_score": 0.5123,
+      "resposta": "4. Biblioteca\nA biblioteca funciona de segunda a sexta-feira, das 7h30 às 21h30, e aos sábados, das 8h às 12h. Para pegar livros emprestados, apresente a carteirinha estudantil ou o número da matrícula.\nCada estudante pode ter até 5 livros emprestados ao mesmo tempo, por 7 dias corridos. A renovação pode ser feita até 3 vezes, pelo Portal do Aluno ou no balcão, desde que o livro não tenha sido reservado por outra pessoa. O atraso gera multa de R$ 1,00 por dia e por livro. (Seção 4, p. 2)",
+      "fontes": [
+        "Seção 4 (p. 2) — manual_aluno_exemplo.pdf"
+      ],
+      "fonte_ok": true,
+      "palavras_ok": true,
+      "acertou": true,
+      "motivo": "ok"
+    },
+    {
+      "id": 15,
+      "pergunta": "Como funciona a defesa do TCC e qual nota preciso para ser aprovado?",
+      "resposta_esperada": "Defesa pública perante banca de três membros; aprovação com nota final igual ou superior a 7,0.",
+      "posicao": 2,
+      "melhor_score": 0.3143,
+      "resposta": "Art. 32. O resultado da análise do aproveitamento é divulgado em até quinze dias úteis, e as disciplinas dispensadas são registradas no histórico escolar com a observação \"aproveitamento de estudos\", sem atribuição de nota. (Art. 32, p. 5)",
+      "fontes": [
+        "Art. 32 (p. 5) — regulamento_exemplo.pdf"
+      ],
+      "fonte_ok": false,
+      "palavras_ok": false,
+      "acertou": false,
+      "motivo": "ok"
+    }
+  ],
+  "fora_do_escopo": [
+    {
+      "pergunta": "Qual é o valor da mensalidade do curso de Medicina?",
+      "recusou": false,
+      "melhor_score": 0.1811695595733206,
+      "motivo": "ok",
+      "resposta": "Art. 14. Não é permitido trancar a matrícula no primeiro semestre do curso, exceto por motivo de saúde comprovado por laudo médico ou por convocação para o serviço militar obrigatório. (Art. 14, p. 2)"
+    },
+    {
+      "pergunta": "Quem ganhou a Copa do Mundo de 2022?",
+      "recusou": true,
+      "melhor_score": 0.0,
+      "motivo": "sem_trechos_relevantes",
+      "resposta": "Não encontrei essa informação no regulamento acadêmico nem no manual do aluno. Procure a Secretaria Acadêmica para confirmar."
+    }
+  ]
+}

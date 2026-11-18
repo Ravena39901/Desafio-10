@@ -1,0 +1,46 @@
+:root {
+  --fundo: #f4f6f8; --cartao: #fff; --texto: #1c2430; --suave: #5b6675; --borda: #dfe4ea;
+  --marca: #1f6f8b; --marca-escura: #17566c; --aviso: #b45309; --aviso-fundo: #fff7ed; --erro: #b42318;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, "Segoe UI", Roboto, sans-serif; background: var(--fundo); color: var(--texto); }
+.layout { display: grid; grid-template-columns: 1fr 300px; gap: 16px; max-width: 1100px; margin: 0 auto; padding: 16px; height: 100vh; }
+.chat { display: flex; flex-direction: column; background: var(--cartao); border: 1px solid var(--borda); border-radius: 12px; min-height: 0; }
+.chat header { padding: 16px 20px; border-bottom: 1px solid var(--borda); }
+.chat h1 { margin: 0 0 4px; font-size: 20px; }
+.chat header p { margin: 0; color: var(--suave); font-size: 14px; }
+.mensagens { flex: 1; overflow-y: auto; padding: 16px 20px; display: flex; flex-direction: column; gap: 12px; }
+.msg { max-width: 85%; padding: 10px 14px; border-radius: 12px; line-height: 1.5; }
+.msg p { margin: 0; white-space: pre-wrap; }
+.msg.aluno { align-self: flex-end; background: var(--marca); color: #fff; }
+.msg.assistente { align-self: flex-start; background: var(--fundo); border: 1px solid var(--borda); }
+.msg.nao-encontrado { background: var(--aviso-fundo); border-color: #fed7aa; }
+.msg.erro { align-self: flex-start; background: #fef3f2; color: var(--erro); border: 1px solid #fecdca; }
+.msg.digitando { color: var(--suave); font-style: italic; }
+.selo { display: inline-block; margin-bottom: 6px; padding: 2px 8px; border-radius: 999px; background: var(--aviso); color: #fff; font-size: 12px; font-weight: 600; }
+.msg h4 { margin: 12px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--suave); }
+.fontes { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.fonte { background: var(--cartao); border: 1px solid var(--borda); border-radius: 8px; padding: 6px 10px; }
+.fonte-cabecalho { all: unset; cursor: pointer; display: flex; gap: 10px; align-items: baseline; width: 100%; font-size: 14px; }
+.fonte-rotulo { font-weight: 600; color: var(--marca-escura); }
+.fonte-arquivo { color: var(--suave); flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; }
+.fonte-score { font-size: 12px; color: var(--suave); }
+.fonte-secao { font-size: 12px; color: var(--suave); margin-top: 2px; }
+.fonte-trecho { margin: 8px 0 2px; padding-left: 10px; border-left: 3px solid var(--borda); font-size: 13px; color: var(--suave); white-space: pre-wrap; }
+.exemplos { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; color: var(--suave); }
+.exemplos p { margin: 0; }
+.exemplo { background: var(--cartao); border: 1px solid var(--borda); border-radius: 999px; padding: 8px 14px; cursor: pointer; font: inherit; color: var(--texto); }
+.exemplo:hover { border-color: var(--marca); }
+.entrada { display: flex; gap: 8px; padding: 12px 16px; border-top: 1px solid var(--borda); }
+.entrada input { flex: 1; padding: 10px 12px; border: 1px solid var(--borda); border-radius: 8px; font: inherit; }
+button { font: inherit; }
+.entrada button, .secundario { background: var(--marca); color: #fff; border: 0; border-radius: 8px; padding: 10px 16px; cursor: pointer; }
+.entrada button:hover:not(:disabled), .secundario:hover:not(:disabled) { background: var(--marca-escura); }
+button:disabled { opacity: .5; cursor: not-allowed; }
+:focus-visible { outline: 2px solid var(--marca); outline-offset: 2px; }
+.documentos { background: var(--cartao); border: 1px solid var(--borda); border-radius: 12px; padding: 16px; align-self: start; }
+.documentos h3 { margin: 0 0 10px; font-size: 15px; }
+.documentos ul { list-style: none; margin: 0 0 12px; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.documentos li { display: flex; flex-direction: column; font-size: 13px; word-break: break-all; }
+.documentos li span, .vazio, .aviso { color: var(--suave); font-size: 13px; }
+@media (max-width: 800px) { .layout { grid-template-columns: 1fr; height: auto; } .chat { height: 80vh; } }
